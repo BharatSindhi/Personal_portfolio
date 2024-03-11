@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>bharat</title>
+     <link rel="stylesheet" href="style.css">
+     <script src="https://kit.fontawesome.com/9b79910f1f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+     <!-- header start -->
+     <div id="header">
+          <div class="container">
+
+               <nav>
+                    <h1><span>B</span>harat.</h1>
+                    <ul id="sidemenu">
+                         <li><a href="#header">Home</a></li>
+                         <li><a href="#about">About</a></li>
+                         <li><a href="#services">Services</a></li>
+                         <li><a href="#contact">Contact</a></li>
+                         <i class="fas fa-times"onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars"onclick="openmenu()"></i>
+               </nav>
+               <div class="header-text">
+                    <p>FULL STACK Developer </p>
+                    <h1>Hi, I'm <span>Bharat</span> <br> Sindhi From India</h1>
+                    <button type="button" class="btn btn2" onclick="tab()">Contact Me</button>
+               </div>
+
+
+          </div>
+     </div>
+     <!-- header end -->
+     <!-- about -->
+     <div id="about">
+          <div class="container">
+               <div class="row">
+                    <div class="about-col-1">
+                         <img src="images/sahil.png.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                         <h1 class="sub">About Me</h1>
+                         <p>I am an enthusiastic and results-oriented fresher aiming to embark on a fulfilling career as a MERN stack developer. With a strong foundation in JavaScript, backend frameworks like Node.js and Express.js, and frontend libraries like React.js, I am eager to contribute to the development of interactive, dynamic, and user-centric web applications.</p>
+
+                         <div class="tab-title">
+                              <p class="tab-link active-link" onclick="opentab('Skills')">Skills</p>
+                             
+                              <p class="tab-link" onclick="opentab('Edication')">Edication</p>
+
+                         </div>
+                         <div class="tab-content active-tab" id="Skills">
+                              <ul>
+                                   <li><span>Front-end developer </span><br>HTML5, CSS3, JavaScript (ES6+), Responsive Design, Accessibility, Cross-Browser Compatibility, Performance Optimization, UI/UX Design Principles, Testing & Debugging.</li>
+                                   <li><span>Back-end developer </span><br> Adept in  Node.js. Proficient in building APIs with RESTful architectures. Master of database design and management using MongoDB. Experience with cloud platforms like AWSfor scalable deployments. Adept at performance optimization and troubleshooting for seamless user experiences.</li>
+                                   <li><span>Python developer </span><br>Django/Flask experience for building dynamic web applications, RESTful API development, front-end integration (HTML, CSS, JavaScript).</li>
+
+                              </ul>
+                         </div>
+                         
+                         <div class="tab-content" id="Edication">
+                              <ul>
+                                   <li><span>Collage</span><br>MIDS</li>
+                                   <li><span>Degree</span><br>Computer engineer,diploma</li>
+                                  
+
+                              </ul>
+                         </div>
+
+                    </div>
+
+               </div>
+          </div>
+     </div>
+     <!-- about end -->
+
+     <!-- servioces -->
+     <div id="services">
+          <div class="container">
+               <h1 class="sub">My Services</h1>
+               <div class="services-list">
+                    <div>
+                         <i class="fa-solid fa-code"></i>
+                         <h2>wed development</h2>
+                         <p> Build custom websites, or web applications from scratch, catering to your unique needs and ideas.</p>
+                         <a href="#">learn moen</a>
+                    </div>
+                    <div>
+                         <i class="fa-solid fa-crop"></i>
+                         <h2>Problem-Solving & Consulting</h2>
+                         <p>Analyze technical issues, offer solutions, and consult on website/app improvement & performance optimization.</p>
+                         <a href="#">learn moen</a>
+                    </div>
+                    <div>
+                         <i class="fa-brands fa-app-store-ios"></i>
+                         <h2>Freelance Development</h2>
+                         <p>Take on short-term projects to bring your web-based ideas to life, delivering high-quality code and meeting deadlines.</p>
+                         <a href="#">learn moen</a>
+                    </div>
+               </div>
+          </div>
+     </div>
+
+     <!-- servioces   end-->
+
+     <!-- contact  -->
+
+     <div id="contact">
+          <div class="container">
+               <div class="row">
+                    <div class="contact-left">
+                         <h1 class="sub">My Work</h1>
+                         <p><i class="fa-regular fa-paper-plane"></i>sindhibharat567@gmail.com</p>
+                         <p><i class="fa-solid fa-phone"></i>(+91)9429295597</p>
+                         <div class="social-icon">
+                              <a href="http://"><i class="fa-brands fa-facebook-f"></i></a>
+                              <a href="http://"><i class="fa-brands fa-twitter-square"></i></a>
+                              <a href="http://"><i class="fa-brands fa-instagram"></i></a>
+                              <a href="http://"><i class="fa-brands fa-linkedin"></i></a>
+                         </div>
+                         <a href="images/resume_sindhi bharat.docx" download  class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                         <form name="submit-to-google-sheet" method="post">
+                              <input type="text" name="Name" placeholder="Your Name" required>
+                              <input type="email" name="Email" placeholder="Your Email" required>
+                              <textarea name="Message"  rows="6"  placeholder="Your Message"></textarea>
+                              <button type="button" class="btn btn2" onclick="alert('seever is down')" >submit</button>
+                         </form>
+                         <span id="msg"></span>
+                    </div>
+
+               </div>
+          </div>
+          <div class="copyrigth">
+               <p>Lorem ipsum <i class="fa-solid fa-heart"></i>dolor sit.</p>
+          </div>
+     </div>
+     <!-- contact end  -->
+     
+     <script src="script.js"></script>
+    
+
+</body>
+
+</html>
